@@ -15,12 +15,12 @@ public class GenericTest {
 		age.add(18);
 		number.add(213);
 		
-		getData(name);
+		//getData(name);
 		getData(age);
 		getData(number);
 	}
 	
-	public static void getData(List<?> data) {
+	public static void getData(List<? extends Number> data) {
 		System.out.println("data: " + data.get(0));
 	}
 
